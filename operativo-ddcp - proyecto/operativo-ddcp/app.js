@@ -25,8 +25,12 @@
       if (prev) prev.disabled = i <= 0;
       if (next) next.disabled = i >= nums.length - 1;
     });
-    try { history.replaceState(null, '', '#alfa' + n); } catch (e) {}
+
     if (mover) {
+      try { history.replaceState(null, '', '#alfa' + n); } catch (e) {}
+    }
+
+    if (mover && window.location.hash !== "") {
       var a = document.querySelector('.ficha.activa');
       if (a && window.matchMedia('(max-width: 900px)').matches) {
         a.scrollIntoView({ block: 'start' });
