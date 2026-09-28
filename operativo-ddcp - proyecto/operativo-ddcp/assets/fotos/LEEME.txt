@@ -1,0 +1,21 @@
+Fotos de la página
+==================
+
+rostros/    el rostro de cada objetivo, ya recortado (solo la cara)
+fachadas/   el frente del domicilio
+
+Nombre del archivo: el número de ALFA. Ejemplos:
+
+    rostros/alfa29.jpg
+    fachadas/alfa29.jpg
+
+No hace falta cargar las 57: la ficha muestra la foto cuando el archivo
+existe y la omite cuando no.
+
+Después de copiar fotos nuevas:
+
+    python3 preparar_fotos.py     (las achica y comprime)
+    python3 construir.py          (arma la pagina)
+
+Los originales de los sobres están en:
+    Escritorio/OPERATIVO/FOTOS PARA LA PAGINA/ALFA <n>/
