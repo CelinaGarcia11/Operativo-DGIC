@@ -78,5 +78,5 @@
   });
 
   var m = /^#alfa(\d{1,2})$/i.exec(location.hash || '');
-  pintar(m && nums.indexOf(+m[1]) >= 0 ? +m[1] : nums[0], !!m);
+  pintar(m && nums.indexOf(m[1]) >= 0 ? m[1] : nums[0], false);
 })();
